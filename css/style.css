@@ -1,0 +1,37 @@
+body{
+	height: 100%;
+	margin: 0;
+	width: 100%;
+}
+html{
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+#background{
+	background-image: url("");
+	background-size: cover;
+}
+#container{
+	height: 100%;
+	width: 100%;
+}
+#logo{
+	height: 100%;
+	text-align: center;
+	width: 100%;
+}
+#logo img{
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	min-width: 100px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 10%;
+}
+#particles{
+	height: 100%;
+	width: 100%;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- Copyright 2015 BUUT+BUUF, all rights reserved. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>BUUT+BUUF</title>
+		<link rel="stylesheet" href="css/perspectiveRules.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="background"></div>
+			<div id="particles"></div>
+			<div id="logo"><img src="images/logo.svg" alt="BUUT+BUUF"></div>
+		</div>
+		<script src="js/jquery.particleground.min.js"></script>
+		<script src="js/jquery.logosDistort.min.js"></script>
+		<script>
+			var particle_options = {
+				dotColor: "#000000",
+				lineColor: "#000000",
+				particleRadius: 8,
+				density: 10000,
+				parallax: false
+			};
+			var distortion_options = {
+					effectWeight: 2,
+					outerBuffer: 1.08,
+					elementDepth: 200,
+					perspectiveMulti: 1.5,
+					enableSmoothing: true,
+					onInit: function() {
+						var particles = particleground(document.getElementById("particles"), particle_options);
+					}
+				};
+			document.addEventListener('DOMContentLoaded', function () {
+				if (/*@cc_on!@*/false || !!document.documentMode) {
+					var particles = particleground(document.getElementById("particles"), particle_options);
+				}
+				else {
+					var distortion = new logosDistort(document.getElementById("container"), distortion_options);
+				}
+			}, false);
+		</script>
+	</body>
+</html>
