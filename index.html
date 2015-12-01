@@ -2,8 +2,10 @@
 <!-- Copyright 2015 BUUT+BUUF, all rights reserved. -->
 <html>
 	<head>
-		<meta charset="utf-8">
 		<title>BUUT+BUUF</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="robots" content="noarchive,nosnippet,notranslate,noimageindex">
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="css/perspectiveRules.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -18,12 +20,12 @@
 		<script src="js/jquery.logosDistort.min.js"></script>
 		<script>
 			var particle_options = {
-				dotColor: "#000000",
-				lineColor: "#000000",
-				particleRadius: 8,
-				density: 10000,
-				parallax: false
-			};
+					dotColor: "#000000",
+					lineColor: "#000000",
+					particleRadius: 8,
+					density: 10000,
+					parallax: false
+				};
 			var distortion_options = {
 					effectWeight: 2,
 					outerBuffer: 1.08,
@@ -42,6 +44,14 @@
 					var distortion = new logosDistort(document.getElementById("container"), distortion_options);
 				}
 			}, false);
+		</script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-44786553-2', 'auto');
+			ga('send', 'pageview');
 		</script>
 	</body>
 </html>
